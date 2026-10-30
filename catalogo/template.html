@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#f3ebd9">
+  <meta name="description" content="Catálogo de Tashi Joyería: {{COUNT}} piezas en oro 18K. Anillos, cadenas, dijes, aretes, topos y pulseras.">
+  <title>Catálogo — Tashi Joyería</title>
+  <link rel="icon" href="../tashi-assets/logo.webp" type="image/webp">
+  <link rel="preload" href="../tashi-assets/domaine.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="../tashi-assets/sweet-sans.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="catalogo.css?v=10">
+  <script>if ("IntersectionObserver" in window) { document.documentElement.classList.add("js-reveal"); setTimeout(() => { if (!document.querySelector(".plate.is-in")) document.documentElement.classList.remove("js-reveal"); }, 2500); }</script>
+  <script src="catalogo.js?v=15" defer></script>
+</head>
+<body>
+  <a class="skip" href="#catalogo">Ir al catálogo</a>
+
+  <header class="cat-header">
+    <a class="cat-brand" href="../index.html" aria-label="Tashi Joyería, volver al inicio">
+      <img src="../tashi-assets/logo.webp" width="400" height="145" alt="Tashi">
+    </a>
+    <nav class="cat-nav" aria-label="Navegación del catálogo">
+      <a href="../index.html">Inicio</a>
+      <a href="../index.html#personaliza">A medida</a>
+    </nav>
+    <a class="cat-header-cta" href="../index.html#cotizar">Cotizar <svg aria-hidden="true"><use href="#cat-arrow"/></svg></a>
+  </header>
+
+  <main id="catalogo">
+    <section class="cat-hero" aria-labelledby="cat-title">
+      <h1 id="cat-title">Catálogo</h1>
+      <p>{{COUNT}} piezas en oro 18K. Elige una y cotízala por WhatsApp.</p>
+    </section>
+
+    <section class="cat-toolbar" id="buscar" aria-label="Buscar y filtrar el catálogo">
+      <div class="cat-search-row">
+        <label class="cat-search" for="catalog-search">
+          <svg aria-hidden="true"><use href="#cat-search"/></svg>
+          <input id="catalog-search" type="search" placeholder="Buscar: esmeralda, cadena, corazón…" autocomplete="off" spellcheck="false">
+        </label>
+        <p class="cat-count" id="catalog-count" role="status" aria-live="polite">{{COUNT}} piezas</p>
+      </div>
+      <div class="cat-filters" role="group" aria-label="Filtrar por categoría">
+        {{CHIPS}}
+      </div>
+    </section>
+
+    <div class="cat-grid-wrap" id="catalog-grid">
+      {{CHAPTERS}}
+    </div>
+
+    <div class="cat-empty" id="catalog-empty" hidden>
+      <h2>No encontramos esa pieza.</h2>
+      <p>Prueba con otra palabra o cuéntanos qué buscas al cotizar.</p>
+      <button class="button" id="clear-filters" type="button">Ver todas las piezas</button>
+    </div>
+
+    <section class="cat-closing">
+      <p>¿No ves lo que imaginas? La diseñamos contigo.</p>
+      <a class="button" href="../index.html#cotizar">Cotizar por WhatsApp <svg aria-hidden="true"><use href="#cat-arrow"/></svg></a>
+    </section>
+  </main>
+
+  <footer class="cat-footer">
+    <img src="../tashi-assets/logo-wordmark-light.webp" width="400" height="145" alt="Tashi">
+    <nav aria-label="Navegación del pie">
+      <a href="../index.html">Inicio</a>
+      <a href="../index.html#personaliza">A medida</a>
+      <a href="../index.html#cotizar">Cotizar</a>
+      <a href="https://www.instagram.com/tashijoyeria_/" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+    <small>Barranquilla, Colombia · Precio y disponibilidad se confirman al cotizar.</small>
+  </footer>
+
+  <dialog class="piece-dialog" id="piece-dialog" aria-labelledby="piece-title">
+    <div class="piece-sheet">
+      <button class="piece-close" type="button" data-close aria-label="Cerrar ficha">
+        <svg aria-hidden="true"><use href="#cat-close"/></svg>
+      </button>
+      <div class="piece-visual">
+        <img id="piece-image" width="800" height="800" alt="">
+      </div>
+      <div class="piece-copy">
+        <p class="piece-kicker"><span id="piece-category"></span><span id="piece-ref"></span></p>
+        <h2 id="piece-title"></h2>
+        <p class="piece-materials" id="piece-materials"></p>
+        <p class="piece-description" id="piece-description" hidden></p>
+        <div class="piece-actions">
+          <a class="button" id="piece-quote" href="../index.html#cotizar">Cotizar esta pieza <svg aria-hidden="true"><use href="#cat-arrow"/></svg></a>
+          <p class="piece-note">Precio y disponibilidad se confirman por WhatsApp.</p>
+        </div>
+        <div class="piece-nav">
+          <button type="button" id="piece-prev" aria-label="Pieza anterior"><svg class="flip" aria-hidden="true"><use href="#cat-arrow"/></svg> Anterior</button>
+          <button type="button" id="piece-next" aria-label="Pieza siguiente">Siguiente <svg aria-hidden="true"><use href="#cat-arrow"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="cat-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 5l7 7-7 7"/></symbol>
+    <symbol id="cat-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="cat-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+  </svg>
+
+  <script type="application/json" id="catalog-data">{{DATA_JSON}}</script>
+</body>
+</html>

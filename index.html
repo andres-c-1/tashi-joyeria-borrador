@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#141810">
+  <meta name="description" content="Joyas en oro de 18K, piedras preciosas y piezas personalizadas. Descubre Tashi Joyería y cuéntanos la historia que quieres llevar contigo.">
+  <title>Tashi Joyería — Cada joya, un legado</title>
+  <link rel="icon" href="tashi-assets/logo.webp" type="image/webp">
+  <link rel="preload" href="tashi-assets/domaine.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="tashi-assets/sweet-sans.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="tashi-assets/dual-gems-render.png" as="image">
+  <link rel="stylesheet" href="tashi.css?v=32">
+  <script src="tashi.js?v=23" defer></script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Ir al contenido</a>
+  <header class="header" id="header">
+    <div class="header-grid">
+      <nav class="desktop-nav header-nav-left" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li class="nav-item nav-collection">
+            <button class="nav-trigger" id="collection-trigger" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="collection-menu">Colección <svg aria-hidden="true"><use href="#chevron"/></svg></button>
+            <div class="mega-menu" id="collection-menu" hidden>
+              <div class="mega-intro">
+                <span class="mega-kicker">La colección</span>
+                <h2>Piezas para<br><em>empezar.</em></h2>
+                <p>Una selección para descubrir el universo Tashi. El archivo completo reúne 145 piezas documentadas.</p>
+                <a class="mega-catalog-link" href="catalogo/index.html">Abrir el catálogo completo <svg aria-hidden="true"><use href="#arrow"/></svg></a>
+              </div>
+              <div class="mega-content">
+                <label class="mega-search"><svg aria-hidden="true"><use href="#search"/></svg><input id="collection-search" type="search" placeholder="Buscar en el catálogo" aria-label="Buscar en el catálogo" autocomplete="off"></label>
+                <span class="mega-search-hint">Escribe y pulsa Enter para buscar entre las 145 piezas.</span>
+                <div class="mega-menu-grid">
+                  <a class="mega-piece" href="#cotizar" data-piece="Anillo Dual Gems" data-search="dual gems anillo esmeralda colombiana oro blanco 18k"><img src="tashi-assets/dual-gems.webp" width="1080" height="1080" alt=""><span><strong>Dual Gems</strong><small>Esmeralda colombiana · Oro blanco de 18K</small></span><svg aria-hidden="true"><use href="#arrow"/></svg></a>
+                  <a class="mega-piece" href="#cotizar" data-piece="Anillo Banda Esmeraldas Colombianas" data-search="anillo banda esmeraldas colombianas naturales oro 18k"><img src="tashi-assets/emerald-band.webp" width="1080" height="1080" alt=""><span><strong>Esmeraldas colombianas</strong><small>Esmeraldas naturales · Oro de 18K</small></span><svg aria-hidden="true"><use href="#arrow"/></svg></a>
+                  <a class="mega-piece" href="#cotizar" data-piece="Anillo Corazón Azul" data-search="anillo corazon azul circones oro 18k"><img src="tashi-assets/blue-heart.webp" width="1080" height="1080" alt=""><span><strong>Corazón azul</strong><small>Circones · Oro de 18K</small></span><svg aria-hidden="true"><use href="#arrow"/></svg></a>
+                </div>
+                <p class="mega-no-results" id="collection-no-results" role="status" aria-live="polite" hidden>No encontramos esa pieza. Prueba con otro término.</p>
+              </div>
+            </div>
+          </li>
+          <li><a class="nav-link" href="#personaliza">A medida</a></li>
+        </ul>
+      </nav>
+      <a class="brand" href="#inicio" aria-label="Tashi Joyería, inicio">
+        <img class="brand-light" src="tashi-assets/logo-wordmark-light.webp" width="400" height="145" alt="Tashi">
+        <img class="brand-dark" src="tashi-assets/logo.webp" width="400" height="145" alt="Tashi">
+      </a>
+      <div class="header-right">
+        <nav class="desktop-nav" aria-label="Navegación secundaria">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#historia">Historia</a></li>
+            <li><a class="nav-link nav-catalog" href="catalogo/index.html">Catálogo <svg aria-hidden="true"><use href="#arrow"/></svg></a></li>
+          </ul>
+        </nav>
+        <a class="header-contact" href="#cotizar">Cotizar <svg aria-hidden="true"><use href="#arrow"/></svg></a>
+        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-nav"><svg class="icon-open" aria-hidden="true"><use href="#menu"/></svg><svg class="icon-close" aria-hidden="true"><use href="#close"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Navegación móvil" hidden>
+    <p class="mobile-nav-kicker">Índice</p>
+    <a class="mobile-link" href="#inicio"><span>01</span>Inicio</a>
+    <a class="mobile-link" href="#joyas"><span>02</span>Colección</a>
+    <a class="mobile-link" href="catalogo/index.html"><span>03</span>Catálogo<em>145</em></a>
+    <a class="mobile-link" href="#personaliza"><span>04</span>A medida</a>
+    <a class="mobile-link" href="#historia"><span>05</span>Historia</a>
+    <a class="button mobile-nav-cta" href="#cotizar">Cotizar por WhatsApp <svg aria-hidden="true"><use href="#arrow"/></svg></a>
+    <div class="mobile-nav-foot"><span>Barranquilla · Colombia</span><a href="https://www.instagram.com/tashijoyeria_/" target="_blank" rel="noopener">Instagram <svg aria-hidden="true"><use href="#arrow"/></svg></a></div>
+  </nav>
+  <main id="contenido">
+    <section class="stage" id="inicio" aria-labelledby="hero-title">
+      <p class="stage-kicker">Bespoke fine jewelry · Oro de 18K</p>
+      <h1 id="hero-title" class="stage-title"><span class="hero-first">Cada joya,</span> <em class="hero-phrase"><span class="word-window" aria-live="off"><span id="hero-word">un legado.</span></span></em></h1>
+      <figure class="jewel" aria-label="Anillo Dual Gems de Tashi, esmeralda colombiana y diamantes en oro blanco de 18K">
+        <div class="jewel-follow" id="jewel-follow">
+          <div class="jewel-zoom" id="jewel-zoom">
+            <img class="hero-jewel" id="jewel-img" src="tashi-assets/dual-gems-render.png" width="1254" height="1254" alt="Anillo Dual Gems de Tashi: dos piedras en forma de gota, una de ellas esmeralda colombiana, con halos de diamantes" fetchpriority="high">
+          </div>
+        </div>
+      </figure>
+      <div class="stage-foot">
+        <div class="stage-meta">
+          <span class="stage-piece">Dual Gems</span>
+          <span class="stage-desc">Esmeralda colombiana · Oro blanco de 18K</span>
+        </div>
+        <div class="stage-actions">
+          <a class="button" href="#cotizar" data-piece="Anillo Dual Gems">Cotizar esta pieza <svg aria-hidden="true"><use href="#arrow"/></svg></a>
+          <button class="quiet" id="detail-toggle" aria-pressed="false"><svg aria-hidden="true"><use href="#zoom"/></svg><span>Ver de cerca</span></button>
+        </div>
+      </div>
+      <p class="stage-hint" id="stage-hint">Mueve el cursor sobre la joya para rotarla</p>
+      <a class="scroll-cue" href="#joyas"><span>Descubre tu próxima historia</span><svg aria-hidden="true"><use href="#down"/></svg></a>
+    </section>
+
+    <section class="collection section" id="joyas" aria-labelledby="collection-title">
+      <div class="section-heading reveal">
+        <h2 id="collection-title">Un encuentro.<br><em>Una joya.</em></h2>
+        <div><p>Para celebrar, recordar o simplemente ser tú.<br>Empieza por el tipo de pieza que buscas.</p></div>
+      </div>
+      <div class="category-rail reveal" id="category-rail">
+        <ul class="category-track" aria-label="Categorías del catálogo">
+          <li><a class="category-tile" href="catalogo/index.html#capitulo-anillos"><span class="category-media"><img src="tashi-assets/emerald-band.webp" alt="Anillo banda con esmeraldas colombianas" loading="lazy" decoding="async"></span><span class="category-name">Anillos</span><span class="category-count">32 piezas</span></a></li>
+          <li><a class="category-tile" href="catalogo/index.html#capitulo-cadenas"><span class="category-media"><img src="tashi-assets/chain-heart.webp" alt="Cadena con dije de esmeralda en forma de corazón" loading="lazy" decoding="async"></span><span class="category-name">Cadenas</span><span class="category-count">45 piezas</span></a></li>
+          <li><a class="category-tile" href="catalogo/index.html#capitulo-dijes"><span class="category-media"><img src="tashi-assets/catalogo/dije-corazon.webp" alt="Dije corazón en oro 18K" loading="lazy" decoding="async"></span><span class="category-name">Dijes</span><span class="category-count">19 piezas</span></a></li>
+          <li><a class="category-tile" href="catalogo/index.html#capitulo-aretes"><span class="category-media"><img src="tashi-assets/emerald-earrings.webp" alt="Aretes espiral con esmeraldas" loading="lazy" decoding="async"></span><span class="category-name">Aretes</span><span class="category-count">7 piezas</span></a></li>
+          <li><a class="category-tile" href="catalogo/index.html#capitulo-topos"><span class="category-media"><img src="tashi-assets/catalogo/jackets-esmeraldas-colombianas-y-diamantes.webp" alt="Topos con esmeralda colombiana y diamantes" loading="lazy" decoding="async"></span><span class="category-name">Topos</span><span class="category-count">22 piezas</span></a></li>
+          <li><a class="category-tile" href="catalogo/index.html#capitulo-pulseras"><span class="category-media"><img src="tashi-assets/tennis-bracelet.webp" alt="Pulsera tennis en diamantes" loading="lazy" decoding="async"></span><span class="category-name">Pulseras</span><span class="category-count">8 piezas</span></a></li>
+          <li aria-hidden="true"><a class="category-tile" tabindex="-1" href="catalogo/index.html#capitulo-anillos"><span class="category-media"><img src="tashi-assets/emerald-band.webp" alt="Anillo banda con esmeraldas colombianas" loading="lazy" decoding="async"></span><span class="category-name">Anillos</span><span class="category-count">32 piezas</span></a></li>
+          <li aria-hidden="true"><a class="category-tile" tabindex="-1" href="catalogo/index.html#capitulo-cadenas"><span class="category-media"><img src="tashi-assets/chain-heart.webp" alt="Cadena con dije de esmeralda en forma de corazón" loading="lazy" decoding="async"></span><span class="category-name">Cadenas</span><span class="category-count">45 piezas</span></a></li>
+          <li aria-hidden="true"><a class="category-tile" tabindex="-1" href="catalogo/index.html#capitulo-dijes"><span class="category-media"><img src="tashi-assets/catalogo/dije-corazon.webp" alt="Dije corazón en oro 18K" loading="lazy" decoding="async"></span><span class="category-name">Dijes</span><span class="category-count">19 piezas</span></a></li>
+          <li aria-hidden="true"><a class="category-tile" tabindex="-1" href="catalogo/index.html#capitulo-aretes"><span class="category-media"><img src="tashi-assets/emerald-earrings.webp" alt="Aretes espiral con esmeraldas" loading="lazy" decoding="async"></span><span class="category-name">Aretes</span><span class="category-count">7 piezas</span></a></li>
+          <li aria-hidden="true"><a class="category-tile" tabindex="-1" href="catalogo/index.html#capitulo-topos"><span class="category-media"><img src="tashi-assets/catalogo/jackets-esmeraldas-colombianas-y-diamantes.webp" alt="Topos con esmeralda colombiana y diamantes" loading="lazy" decoding="async"></span><span class="category-name">Topos</span><span class="category-count">22 piezas</span></a></li>
+          <li aria-hidden="true"><a class="category-tile" tabindex="-1" href="catalogo/index.html#capitulo-pulseras"><span class="category-media"><img src="tashi-assets/tennis-bracelet.webp" alt="Pulsera tennis en diamantes" loading="lazy" decoding="async"></span><span class="category-name">Pulseras</span><span class="category-count">8 piezas</span></a></li>
+        </ul>
+      </div>
+      <div class="rail-controls reveal">
+        <button class="rail-pause" id="rail-pause" type="button" aria-pressed="false"><svg aria-hidden="true"><use href="#pause"/></svg><span>Pausar</span></button>
+      </div>
+      <div class="collection-footer reveal">
+        <p><strong>145</strong> piezas en oro 18K, también argollas, candongas, nodrizas y rosarios.</p>
+        <a class="button" href="catalogo/index.html">Ver el catálogo completo <svg aria-hidden="true"><use href="#arrow"/></svg></a>
+      </div>
+    </section>
+
+    <section class="personal section" id="personaliza" aria-labelledby="personal-title">
+      <div class="personal-head reveal">
+        <div>
+          <p class="section-kicker">Joyería a medida</p>
+          <h2 id="personal-title">Empieza con una idea.<br><em>Termina siendo tuya.</em></h2>
+        </div>
+        <p>Una fecha, una persona, una nueva etapa. Diseñamos tu pieza en oro de 18K, con piedras preciosas o semipreciosas, según lo que imaginas y tu presupuesto.</p>
+      </div>
+      <div class="personal-body">
+        <figure class="personal-visual reveal"><img src="tashi-assets/story.webp" width="768" height="957" alt="Dos anillos de Tashi sobre su presentación de marca en marfil" loading="lazy" decoding="async"><figcaption>Lo especial está en lo personal.</figcaption></figure>
+        <div class="personal-steps reveal">
+          <ol class="process">
+            <li><span class="step-no" aria-hidden="true">01</span><div><h3>Cuéntanos tu historia</h3><p>Tu idea, una referencia o la ocasión que quieres celebrar.</p></div></li>
+            <li><span class="step-no" aria-hidden="true">02</span><div><h3>Démosle forma</h3><p>Elegimos juntos el diseño, las piedras y los detalles.</p></div></li>
+            <li><span class="step-no" aria-hidden="true">03</span><div><h3>Hagámosla tuya</h3><p>Recibe tu cotización y las condiciones de fabricación.</p></div></li>
+          </ol>
+          <a class="button light" href="#cotizar">Quiero una joya personalizada <svg aria-hidden="true"><use href="#arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="story section" id="historia" aria-labelledby="story-title">
+      <div class="story-copy reveal">
+        <h2 id="story-title">Hechas con las manos.<br><em>Pensadas con el corazón.</em></h2>
+        <p>Tashi nació del deseo de Emily Sibaja de materializar las ideas de quienes aman las joyas delicadas y elegantes.</p>
+        <blockquote>“Una pieza para ser elegante no necesariamente debe ser costosa, sino pensada y creada con buen gusto.”</blockquote>
+        <span class="founder">Emily Sibaja <span>Fundadora de Tashi Joyería</span></span>
+        <a class="text-link" href="https://www.instagram.com/tashijoyeria_/" target="_blank" rel="noopener">El universo Tashi en Instagram <svg aria-hidden="true"><use href="#arrow"/></svg></a>
+      </div>
+      <figure class="story-photo reveal"><img src="tashi-assets/worn.webp" width="768" height="958" alt="Joyas de Tashi lucidas sobre una mano"><figcaption>Joyas para acompañar tu propia historia.</figcaption></figure>
+    </section>
+
+    <section class="contact section" id="cotizar" aria-labelledby="contact-title">
+      <div class="contact-head reveal">
+        <p class="section-kicker">Cotizar por WhatsApp</p>
+        <h2 id="contact-title">Tu próxima joya<br><em>empieza hablando.</em></h2>
+        <p>Cuéntanos qué pieza te enamoró o qué tienes en mente.</p>
+      </div>
+      <form id="quote-form" class="quote-card reveal">
+        <div class="field">
+          <label for="piece">¿Qué te gustaría crear?</label>
+          <select id="piece" name="piece"><option>Una joya personalizada</option><option>Anillo Dual Gems</option><option>Anillo Banda Esmeraldas Colombianas</option><option>Anillo Corazón Azul</option><option>Anillo de zafiro</option><option>Cadena Corazón</option><option>Aretes Espiral Esmeralda</option><option>Pulsera Clavo</option><option>Pulsera Tennis en Diamantes</option><option>Otra pieza del catálogo</option></select>
+        </div>
+        <div class="field">
+          <label for="idea">Cuéntanos un poco <span>(opcional)</span></label>
+          <textarea id="idea" name="idea" rows="3" maxlength="1000" placeholder="Es para un regalo, me gustaría una esmeralda…"></textarea>
+        </div>
+        <div class="quote-actions">
+          <button class="button light" type="submit">Cotizar por WhatsApp <svg aria-hidden="true"><use href="#arrow"/></svg></button>
+          <p class="form-note">Se abrirá WhatsApp con tu mensaje listo. Tú decides cuándo enviarlo.</p>
+        </div>
+        <p class="form-status" id="form-status" role="status"></p>
+      </form>
+      <ul class="contact-facts reveal">
+        <li>Oro de 18K</li>
+        <li>Envíos nacionales e internacionales</li>
+        <li>Barranquilla, Colombia</li>
+        <li><a href="https://tashijoyeria.com/contacto/" target="_blank" rel="noopener">Otros canales de contacto <svg aria-hidden="true"><use href="#arrow"/></svg></a></li>
+      </ul>
+    </section>
+
+    <section class="faq section" aria-labelledby="faq-title">
+      <h2 id="faq-title" class="reveal">Antes de elegir.</h2>
+      <div class="reveal">
+        <details><summary>¿Con qué materiales trabajan?<svg aria-hidden="true"><use href="#plus"/></svg></summary><p>Tashi trabaja con oro de 18K y piedras preciosas y semipreciosas. Cada pieza tiene sus propios materiales; puedes consultarlos al cotizar.</p></details>
+        <details><summary>¿Puedo personalizar una joya?<svg aria-hidden="true"><use href="#plus"/></svg></summary><p>Sí. Comparte tu idea, referencias y presupuesto con el equipo de Tashi para conversar sobre las posibilidades del diseño.</p></details>
+        <details><summary>¿Hacen envíos fuera de Barranquilla?<svg aria-hidden="true"><use href="#plus"/></svg></summary><p>Tashi anuncia envíos nacionales e internacionales. Consulta cobertura, costos y tiempos para tu destino al solicitar la cotización.</p></details>
+        <details><summary>¿Cómo conozco el precio y la disponibilidad?<svg aria-hidden="true"><use href="#plus"/></svg></summary><p>El precio y la disponibilidad se confirman con Tashi según la pieza, sus materiales y los detalles de personalización. Usa el formulario para preparar tu consulta por WhatsApp.</p></details>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><a href="#inicio" aria-label="Tashi, volver al inicio"><img src="tashi-assets/logo-wordmark-light.webp" width="400" height="145" alt="Tashi"></a><p>Cada joya, un legado.</p><div><a href="catalogo/index.html">Catálogo</a><a href="#cotizar">Contacto</a><a href="https://www.instagram.com/tashijoyeria_/" target="_blank" rel="noopener">Instagram <svg aria-hidden="true"><use href="#arrow"/></svg></a></div><small>Tashi Joyería · Barranquilla, Colombia</small></footer>
+  <svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><symbol id="arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 5l7 7-7 7"/></symbol><symbol id="down" viewBox="0 0 24 24"><path d="M12 4v15M5 13l7 7 7-7"/></symbol><symbol id="zoom" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6M7 10h6M10 7v6"/></symbol><symbol id="cursor" viewBox="0 0 24 24"><path d="M4 3l7 18 2.5-7.5L21 11Z"/></symbol><symbol id="pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol><symbol id="play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7Z"/></symbol><symbol id="menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></symbol><symbol id="close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol><symbol id="plus" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14"/></symbol><symbol id="chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol><symbol id="search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></symbol><symbol id="spark" viewBox="0 0 24 24"><path d="M12 2c.7 5.8 4.2 9.3 10 10-5.8.7-9.3 4.2-10 10-.7-5.8-4.2-9.3-10-10 5.8-.7 9.3-4.2 10-10Z"/></symbol></svg>
+</body>
+</html>

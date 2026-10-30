@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($s='C:\\\\Users\\\\andre\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-andre-Downloads-Tashi\\\\c78a7bc8-e038-44f8-b8ea-ce5c49f9c9c2\\\\scratchpad'; New-Item -ItemType Directory -Force $s\\\\npm | Out-Null; Set-Location $s\\\\npm; npm init -y | Out-Null; npm install three@0.170.0 2>&1 | Select-Object -Last 3; Get-ChildItem node_modules\\\\three\\\\build | Select Name,Length; Get-ChildItem node_modules\\\\three\\\\examples\\\\jsm\\\\environments | Select Name)",
+      "PowerShell(cd C:\\\\Users\\\\andre\\\\Downloads\\\\Tashi; Get-ChildItem tashi-assets -File | Sort Length -Desc | Select -First 6 Name,@{n='KB';e={[int]\\($_.Length/1KB\\)}}; \\(Get-ChildItem tashi-assets\\\\catalogo -File | Measure-Object Length -Sum\\).Sum/1MB; Select-String index.html -Pattern 'og:|twitter:|application/ld' | Measure-Object | % Count; Select-String tashi.js -Pattern 'setInterval|2000|cycle' | % { $_.LineNumber.ToString\\(\\)+': '+$_.Line.Trim\\(\\) })",
+      "PowerShell(cd C:\\\\Users\\\\andre\\\\Downloads\\\\Tashi\\\\catalogo; $t = Get-Content template.html -Raw -Encoding UTF8; $t=$t.Replace\\('catalogo.js?v=14','catalogo.js?v=15'\\); [IO.File]::WriteAllText\\(\"$PWD\\\\template.html\",$t,\\(New-Object Text.UTF8Encoding $false\\)\\); python -I build.py; node --check catalogo.js; if\\($?\\){'ok'})",
+      "mcp__visualize__read_me",
+      "mcp__visualize__show_widget"
+    ]
+  }
+}
